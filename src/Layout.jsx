@@ -1,16 +1,20 @@
-import React from "react";
 import Navbar from "./Navbar";
+import { Outlet } from "react-router";
+import Item from "./pages/Item";
 import HomePage from "./pages/HomePage";
 import DetailPage from "./pages/DetailPage";
-import { Outlet } from "react-router";
 
 const Layout = () => {
   return (
-    <div className="">
+    <div className="relative w-full min-h-screen overflow-x-hidden  bg-gray-100 ">
       <Navbar />
-      <Outlet />
+      <div className=" pt-12">
+        <Outlet />
+      </div>
     </div>
   );
 };
 
 export default Layout;
+
+//  경로가 /detail

@@ -1,10 +1,6 @@
 import movieDetailData from "../assets/movieDetailData.json"; // src/pages/DetailPage
-import Navbar from "../Navbar";
-// src/assets/movieDetailData.json
 
 const DetailPage = () => {
-  console.log(movieDetailData);
-
   const genres = movieDetailData.genres;
   return (
     <div className="flex gap-4 w-full h-full">
